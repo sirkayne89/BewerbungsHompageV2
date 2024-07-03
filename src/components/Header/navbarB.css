@@ -1,0 +1,35 @@
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background-color: #1888ff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.bottom-bar span {
+  color: #fff;
+}
+
+.bottom-bar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-bar li {
+  margin: 0 15px;
+}
+
+.bottom-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-bar a:hover {
+  color: #ff0000;
+}

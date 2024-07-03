@@ -1,0 +1,41 @@
+#kenntnisse {
+    background-color: #303030;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  #kenntnisse h3,
+  #kenntnisse h4 {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+    -webkit-text-stroke: 0.3px #000000;
+    text-align: center;
+  }
+  
+  #kenntnisse h4 {
+    margin-top: 40px;
+    padding-bottom: 15px;
+  }
+  
+  .kenntnis {
+    margin-bottom: 15px;
+  }
+  
+  .kenntnis label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .balken {
+    width: 100%;
+    background-color: #666666;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .fortschritt {
+    height: 20px;
+    border-radius: 20px;
+    background-color: #00b688;
+  }

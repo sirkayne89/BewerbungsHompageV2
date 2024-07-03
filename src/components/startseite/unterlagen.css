@@ -1,0 +1,133 @@
+#unterlagen h3 {
+  margin-bottom: 40px;
+}
+
+.bild-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.unterlagen-item {
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1 1 200px;
+  max-width: 350px;
+}
+
+.unterlagen-bild {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.unterlagen-bild:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.unterlagen-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .bild-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unterlagen-item {
+    margin-bottom: 20px;
+    max-width: none;
+    width: 80%;
+  }
+
+  .unterlagen-bild {
+    width: 100%;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+}
+
+.popup-content img {
+  position: relative;
+  background: white;
+  padding-top: 65%;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.slideshow-button {
+  cursor: pointer;
+  position: absolute;
+  top: 95%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slideshow-button.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slideshow-button.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.slideshow-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

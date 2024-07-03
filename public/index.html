@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Serkan Öztürk Bewerbungsseite" />
+    <meta name="Frontend" content="Serkan Öztürk" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6JPL4Y7SZ3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6JPL4Y7SZ3");
+    </script>
+    <title>Bewerbung - Serkan Öztürk</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu-knopf").on("click", function () {
+          if ($(".menu").hasClass("active")) {
+            $(".menu").removeClass("active"); /* Entfernt die 'active'-Klasse */
+            $(this)
+              .find("a")
+              .html(
+                "<ion-icon name='menu-outline'></ion-icon>"
+              ); /* Ändert das Symbol */
+          } else {
+            $(".menu").addClass("active"); /* Fügt die 'active'-Klasse hinzu */
+            $(this)
+              .find("a")
+              .html(
+                "<ion-icon name='close-outline'></ion-icon>"
+              ); /* Ändert das Symbol */
+          }
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
